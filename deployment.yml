@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myweb-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      env: production
+  template:
+    metadata:
+      name: myweb-pod
+      labels:
+        env: production
+    spec:
+      containers:
+       - name: myweb-con
+         image: shivam3120/httpd-webserver:v8
+         imagePullPolicy: Always
