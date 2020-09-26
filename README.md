@@ -1,7 +1,11 @@
 This is an automation task where I have used GitHub, Jenkins ,Kubernetes, Docker platform to do continuous integration by uploading the project codes to GitHub and automate the process of deploying a website by creating custom Docker images using Dockerfile and creating dynamic Jenkins to perform a job.So, the applications will deploy on kubernetes with the help of jenkins Dynamic Cluster.
+
 Problem Statement :
+
 Create container image that has Linux and other basic configuration required to run Slave for Jenkins (example here we require kubectl to be configured). When we launch the job it should automatically start the job on slaves based on the label provided for a dynamic approach. Create a job chain of job1 & job2 using the build pipeline plugin in Jenkins.
+
 Task Description :
+
 1. Create a container image that has Linux and other basic configuration required to run Slave for Jenkins. ( example here we require kubectl to be configured )
 2. When we launch the job it should automatically start the job on slaves based on the label provided for the dynamic approach.
 3. Create a job chain of job1 & job2 using the build pipeline plugin in Jenkins
